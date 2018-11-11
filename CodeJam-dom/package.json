@@ -1,0 +1,17 @@
+{
+  "name": "codejam-dom",
+  "version": "1.0.0",
+  "description": "codejam-dom",
+  "main": "notification.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@neutrinojs/airbnb-base": "^8.3.0",
+    "eslint": "^5.9.0",
+    "eslint-plugin-import": "^2.14.0"
+
+  }
+}

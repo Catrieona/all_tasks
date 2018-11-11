@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.notification {
+    display: none;
+    width: 425px;
+    height: 280px;
+    box-shadow: 1px 1px 7px #888;
+    position: fixed;
+    right: 0;
+    margin: 10px 50px 10px 10px;
+}
+
+.notification_text {
+    display: block;
+    width: 330px;
+    height: 165px;
+    border: 3px solid #676767;
+    box-sizing: border-box;
+    padding: 19px;
+    margin: 10px 10px 55px 10px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #757575;
+}
+
+.notification_text p {
+    color: 484848;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.notification-close {
+    padding: 10px 14px;
+    position: absolute;
+    right: 15px;
+    font-size: 25px;
+    border-radius: 50%;
+    transition: 1s;
+}
+
+.notification-close:hover{
+    cursor: pointer;
+    color: rgb(236, 11, 11);
+}
+
+.notification__checkbox__paginator {
+    display: flex;
+    justify-content: space-around;
+}
+
+.notification__checkbox__paginator label {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.notification__checkbox__paginator input {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.notification__paginator {
+    display: flex;
+    align-items: center;
+}
+
+.notification__paginator-page {
+    width:10px;
+    height: 10px;
+    margin: 5px;
+    border-radius: 50%;
+    background-color: #c9cacb;
+}
+
+.notification__paginator-prev,
+.notification__paginator-next {
+    padding: 1px 9px;
+    border-radius: 50%;
+    border: 1px solid #c9cacb;
+    color: #c9cacb;
+    transition: 1s;
+}
+
+.notification__paginator-prev:hover {
+    background-color: #77b8ee;
+    cursor: pointer;
+    color: white;
+}
+
+.notification__paginator-next:hover {
+    background-color: #77b8ee;
+    cursor: pointer;
+    color: white;
+}
