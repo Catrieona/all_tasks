@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Core-Jam Dom</title>
+        <link href="notification/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="notification">
+            <div class="notification-close"> ✖ </div>
+            <span class="notification_text"></span>
+
+            <div class="notification__checkbox__paginator">
+                <label>
+                    <input type="checkbox" id="notification_disable" name="disable" value="disable">
+                    Disable Tips
+                </label>
+
+                <div class="notification__paginator">
+
+                    <div class="notification__paginator-prev"> ❰ </div>
+                    <div class="notification__paginator-page"></div>
+                    <div class="notification__paginator-page"></div>
+                    <div class="notification__paginator-page"></div>
+                    <div class="notification__paginator-page"></div>
+                    <div class="notification__paginator-page"></div>
+                    <div class="notification__paginator-page"></div>
+                    
+                    <div class="notification__paginator-next"> ❱ </div>
+                </div>
+            </div>
+        </div>
+        <script src="notification/messages.js"></script>
+        <script src="notification/notification.js"></script>
+    </body>
+</html>
