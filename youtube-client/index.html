@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <form class="search_form">
+                <section class='search__form-container'>
+                    <input id="search__form-input" autocomplete="off"  placeholder="Enter your search here" type="text">
+                        <input type="submit" class="search_button" value="GO">
+                </section>
+            </form>
+            
+            <section class="video__container">
+                <div class="video__container-prevPage">
+                    <i class="fas fa-arrow-left"></i>
+                </div> 
+
+                <div class="video_block_wrapper">
+                    <div class="video__container-allVideos"></div>
+                </div>
+
+                <div class="video__container-nextPage">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+            </section>
+            
+            <section class="pagination"></section>
+
+            <script src="dist/main.js"></script>
+        </div>
+    </body>
+</html>
