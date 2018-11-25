@@ -23,8 +23,7 @@ body {
 
 body .wrapper {
   width: 100%;
-  margin: 0 auto;
-  height: 100%; }
+ }
   body .wrapper .search_form .search__form-container {
     padding-top: 80px;
     align-items: center;
