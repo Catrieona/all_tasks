@@ -27,7 +27,7 @@ body {
       display: flex;
       width: 50%;
       height: 150px;
-      margin: 20px 30%; }
+      margin: -40px 30%; }
       body .wrapper .search_form .search__form-container #search__form-input {
         margin: -108px;
         border-radius: 20px;
@@ -82,7 +82,7 @@ body {
         width: 960px;
         height: 460px;
         overflow: hidden;
-        margin: 30px auto; }
+        margin: 10px auto; }
         body .wrapper .video__container .video_block_wrapper .video__container-allVideos {
           display: flex;
           align-items: center;
@@ -191,4 +191,3 @@ body {
     width: 320px !important; } }
 
 /*# sourceMappingURL=style.css.map */
-
