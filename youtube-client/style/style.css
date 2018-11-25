@@ -12,7 +12,7 @@ body, html {
   outline: none; }
 
 body {
-  //background-image: url("../img/bcg.png");
+  /*background-image: url("../img/bcg.png");*/
   background-color: rgba(64, 65, 66, 0.3);
   width: 100%;
   background-repeat: no-repeat;
