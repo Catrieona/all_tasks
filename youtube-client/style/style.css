@@ -12,9 +12,8 @@ body, html {
   outline: none; }
 
 body {
- 
+  background-image: url(../img/bgc.png);
   background-color: rgba(64, 65, 66, 0.3);
-  width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
