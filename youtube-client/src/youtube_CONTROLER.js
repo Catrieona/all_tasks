@@ -35,25 +35,23 @@ export class App_Controller {
         this.nextPage.addEventListener('click', () => this.scrollNext());
         this.prevPage.addEventListener('click', () => this.scrollPrev());
         
-        this.video_block_wrapper.addEventListener('touchstart', this.selfSwipeStart);
-        this.video_block_wrapper.addEventListener('pointerdown', this.selfSwipeStart);
+        this.video_block_wrapper.addEventListener('touchstart', this.selfSwipeStart, true);
+        this.video_block_wrapper.addEventListener('pointerdown', this.selfSwipeStart, true);
 
         window.addEventListener('resize', (e) => this.model.resize(e));
         window.addEventListener('load', (e) => this.model.resize(e));
     }
 
     swipeStart(e){
-        e.preventDefault();
-        document.body.addEventListener('touchmove', this.selfSwipe);
-        document.body.addEventListener('touchend', this.selfSwipeEnd); 
+        document.body.addEventListener('touchmove', this.selfSwipe, false);
+        document.body.addEventListener('touchend', this.selfSwipeEnd, false); 
 
-        document.body.addEventListener('pointermove', this.selfSwipe);
-        document.body.addEventListener('pointerup', this.selfSwipeEnd);
+        document.body.addEventListener('pointermove', this.selfSwipe, false);
+        document.body.addEventListener('pointerup', this.selfSwipeEnd, false);
 
     };
 
     swipe(e){
-        e.preventDefault();
         this.moves.push(e.touches ? e.touches[0].clientX : e.clientX);
         
     };
@@ -65,7 +63,6 @@ export class App_Controller {
     }
 
     swipeEnd(e){
-        e.preventDefault();
         if(this.moves[this.moves.length-1] < this.moves[0]){
             this.scrollNext(1);
         } else if (this.moves[this.moves.length-1] > this.moves[0]){
