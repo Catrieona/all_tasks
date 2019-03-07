@@ -1,0 +1,25 @@
+.tableApp div{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+}
+
+td {
+    border: 1px solid black;
+}
+
+.green {
+    background-color: #d9ead3
+}
+
+.red {
+    background-color: #a61c00;
+}
+
+.pink{
+    background-color: #ea9999;
+}
+
+.grey {
+    background-color: #cccccc;
+}
